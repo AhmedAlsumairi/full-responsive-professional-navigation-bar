@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	@font-face {
+         font-family: pala;
+         src: url(pala.ttf);
+         font-weight: bold;
+         src: local('pala'), url('pala.ttf') format('ttf');
+          }
+ /*         @font-face {
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: bold;
+src: local('Helvetica'), url('Helvetica.woff') format('woff');
+}*/
+@font-face {
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica'), url('Helvetica-Bold.woff') format('woff');
+}
+@font-face {
+font-family: 'Courier New';
+font-style: normal;
+font-weight: normal;
+src: local('Courier New'), url('Cour.woff') format('woff');
+}
+		.heder{
+			width: 100%;
+			max-width: 100%;
+			background: #1e5094;
+			height: 70px;
+			font-family: Courier New ;
+			font-weight: bold;
+			line-height: 25px;
+			padding: 15px 0px 0 0px;
+		}
+		
+		.logo-p {
+			float: left;
+            padding: 5px 0 0 5px;
+            font-size: 20px;
+            color: #fff;
+            font-size: 25px;
+            text-shadow: 0 1px 2px #000;
+            letter-spacing: -1px;
+            
+		}
+		.nav-menup p{
+			
+			float: left;
+			
+
+		}
+		.nav-menup {
+			float: right;
+			transition: .5s;
+		}
+		.nav-menup ul {
+			list-style: none;
+			font-size: 16px;
+			margin: 0;
+			
+		}
+		.nav-menup ul li{
+			float: left;
+			padding: 0 10px;
+		}
+		.nav-menup ul li a{
+			text-decoration: none;
+			color: #eee;
+		}
+		.botton {
+			height: 50px;
+             width: 100%;
+            display: none;
+            text-align: center;
+            padding: 8px 4px 0 4px ;
+		}
+		.show-menu {
+			color: #fff;
+			font-size: 30px !important;
+			float: right;
+		}
+		.logo-m {
+			color: white;
+			float: left;
+		}
+		.logo-m p {
+			 font-size: 20px;
+			 text-shadow: 0 1px 2px #000;
+			 letter-spacing: -1px;
+		}
+		.listIcons {
+           margin: 10px 0 0 0 ;
+           display: none;
+		}
+		.listIcons a{
+			display: inline-block;
+
+		}
+		.iconCover {
+           
+           padding: 0 5px;
+		}
+
+		.iconCover i{
+			    display: block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: auto;
+        color: #3F51B5;
+    background: #fdfdfd;
+    padding-top: 5px;
+    border-radius: 50%;
+
+			
+		}
+		.iconCover p{
+			color: #eee;
+		}
+		.social-icons-mob {
+        padding: 15px 0 0 0;
+        border-top: 1px solid #5b77a0;
+        border-bottom: 1px solid #294c7d;
+        display: none;
+		}
+		.social-icons-mob a{
+			display: inline-block;
+    margin: 0 2px;
+		}
+        .social-icons-mob a p{
+        	    height: 35px;
+    width: 35px;
+    background: #eee;
+    border-radius: 50%;
+    padding: 6px 0 0 0;
+    text-align: center;
+			
+		}
+		.footer-mob {
+			 color: #b1b1b1;
+    font-size: 12px;
+    padding: 10px 0 10px 0;
+    position: relative;
+    text-align: center;
+    display: block;
+   border-bottom: 1px solid #294c7d;
+    border-top: 1px solid #5b77a0;
+    display: none;
+
+		}
+        .footer-mob a{
+        	font-size: 12px;
+    padding: 0px 6px;
+    color: #ddd;
+
+        }
+        .footer-mob a span {
+        	margin: 0 5px;
+        }
+        .footer-mob a::after {
+     position: absolute;
+    content: " ";
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+    top: 40%;
+}
+.footer-mob a:last-child::after {
+     
+    display: none;
+}
+.copy-right-mob {
+    text-align: center;
+    color: #ddd;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #383736;
+    padding-top: 0px;
+   display: none;
+}
+ @media screen and (max-width : 720px) {
+ 	    .nav-menup {
+          float: right;
+          width: 100%;
+          text-align: center;
+          background: #2b5b9d;
+          border-top: 1px solid #ddd;
+         }
+		.nav-menup ul li {
+            float:unset;
+            border-top: 1px solid #5b77a0;
+            border-bottom: 1px solid #294c7d;
+           padding: 12px 0;
+          }
+
+
+		
+		.botton {
+            display: block;
+		}
+		.logo-p {
+			display: none;
+		}
+		.listIcons {
+           
+           display: block;
+		}
+		.social-icons-mob {
+              display: block;
+		}
+		.footer-mob {
+              display: block;
+		}
+		.copy-right-mob {
+			display: block;
+		}
+		}
+	</style>
+	<title>menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/styles.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/imagslider.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="javascript/jquery-3.1.0.js"></script>
+</head>
+<body>
+
+	<div class="heder">
+		<div class="botton">
+            <div class="logo-m"><p>RealTime Projects</p></div>
+			<i class="material-icons show-menu">menu</i>
+		</div>
+		<div class="logo-p"><p>RealTime Projects</p></div>
+		<div class="nav-menup">
+			<div class="clearfx"></div>
+			<div class="nav-containerP">
+				<div class="listIcons">
+              <a href="#"><div class="iconCover"> <i class="material-icons">person</i><p>Login</p> </div></a>
+              <a href="#"><div class="iconCover">   <i class="material-icons">note_add</i> <p>Register </p></div> </a>
+             <a href="#"><div class="iconCover">  <i class=" material-icons">exit_to_app</i><p>Logut</p></div> </a>
+             </div>
+             <div class="clearfx"></div>
+			<ul>
+				<li><a href="#">Home </a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Projects </a></li>
+				<li><a href="#">Requests</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+			<div class="social-icons-mob">
+            
+             <a href="#"><p class="iconCoverP"><i class="fa fa-facebook fa-fw"></i></p></a>
+             <a href="#"><p class="iconCoverP"><i class="fa fa-twitter fa-fw"></i></p></a>
+             <a href="#"><p class="iconCoverP"><i class="fa fa-youtube"></i></p></a>
+             <a href="#"><p class="iconCoverP"><i class="fa fa-instagram fa-fw"></i></p></a>
+             <a href="#"><p class="iconCoverP"><i class="fa fa-linkedin"></i></p></a>
+             <a href="#"><p class="iconCoverP"><i class="fa fa-google-plus"></i></p></a>
+			</div>
+			<div class="footer-mob">
+            <a href=""><span>Privacy</span></a>
+            <a href=""><span>Contact US  </span></a>
+            <a href=""><span>Policy</span></a>
+            
+          </div>
+          <p class="copy-right-mob"> All Rightes Reserved to Reatime Projects @ 2019</p>
+		    </div>	
+		</div>
+
+	</div>
+
+</body>
+</html>
